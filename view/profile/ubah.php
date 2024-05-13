@@ -18,6 +18,6 @@
     <input type="text" name="instagram" placeholder="instagram" value="<?= $items['instagram']; ?>">
 
     <br>
-    <button type="submit">Kirim</button>
+    <button style="background-color: #00ffff;" type="submit">Kirim</button>
 </form>
 

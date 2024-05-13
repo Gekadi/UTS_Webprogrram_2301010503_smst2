@@ -1,4 +1,6 @@
-<a href="/profile/tambah">Tambah Data</a>
+<!-- <a href="/profile/tambah">Tambah Data</a> -->
+<button style="background-color: blue; color: white;" onclick="location.href='/profile/tambah'">Tambah Data</button>
+
 <table>
     <thead>
         <tr>
@@ -17,9 +19,9 @@
                 <td><?= $item['tanggal_lahir']; ?></td>
                 <td><?= $item['instagram']; ?></td>
                 <td>
-                    <a href="/profile/ubah?id=<?= $item['id']; ?>"><button>ubah</button></a>
+                    <a href="/profile/ubah?id=<?= $item['id']; ?>"><button style="background-color:#00ffff;">ubah</button></a>
                     <form action="/profile/delete?id=<?= $item['id']; ?>" method="POST">
-                        <button type="submit">hapus</button>
+                        <button style="background-color:#00ffff ;" type="submit">hapus</button>
                     </form>
                 </td>
             </tr>

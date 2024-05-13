@@ -88,11 +88,10 @@ function createProfile($db, $data)
         '$tanggal_lahir',
         '$instagram'
     )";
-
-    $test = mysqli_query($db, $sql);
-
-    if ($test) {
-        return mysqli_insert_id($db);
+    
+    if (mysqli_query($db, $sql)) {
+        // return mysqli_insert_id($db);
+        
     } else {
         return null;
     }
